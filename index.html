@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>CV - Boxed</title>
+	<title>Moraisvinny.com</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -53,8 +53,7 @@
 					</div><!-- col-sm-4 -->
 				</div><!-- row -->
 			</div><!-- heading-wrapper -->
-			
-			<a class="downlad-btn" href="#">Download CV</a>
+		
 		</div><!-- container -->
 	</header>
 	
@@ -70,6 +69,10 @@
 						<ul class="information margin-tb-30">
 							<li><b>IDADE : </b>32 anos</li>
 							<li><b>STATUS ATUAL : </b>Alocado</li>
+								<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Download CV
+									</button>
+								  </li>
 						</ul>
 						<ul class="social-icons">
 							<li><a href="https://www.linkedin.com/in/moraisvinny/"><i class="ion-social-linkedin"></i></a></li>
@@ -95,17 +98,21 @@
 			</div><!-- row -->
 		</div><!-- container -->
 		
-		<div class="portfolioContainer">
+		<div class="portfolioContainer" >
 			
-			<div class="p-item web-design">
-				<a href="images/portfolio-1-600x400.jpg" data-fluidbox>
-					<img src="images/portfolio-1-600x400.jpg" alt=""></a>
+			<div class="p-item" data-toggle="modal" data-target="#exampleModal" id="piccoli">
+					<img src="images/piccoli.jpg" alt="">
+			</div><!-- p-item -->
+
+			<div class="p-item" data-toggle="modal" data-target="#exampleModal" id="controle">
+					<img src="images/controle.jpg" alt="">
+			</div><!-- p-item -->
+
+			<div class="p-item" data-toggle="modal" data-target="#exampleModal" id="github">
+					<img src="images/github.jpg" alt="">
 			</div><!-- p-item -->
 			
-			<div class="p-item branding graphic-design">
-				<a href="images/portfolio-7-600x800.jpg" data-fluidbox>
-					<img src="images/portfolio-7-600x800.jpg" alt=""></a>
-			</div><!-- p-item -->
+			
 			
 			
 		</div><!-- portfolioContainer -->
@@ -314,6 +321,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 	</footer>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="modalTitulo">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+					<div class="mx-auto" style="width: 300px;">
+						<img src="images/piccoli.jpg"></img>
+					</div>
+					<div class="mx-auto" style="width: 400px;">
+						<p>Teste para paragrafo de piccoli vestiti Teste para paragrafo de piccoli vestiti Teste para paragrafo de piccoli vestiti Teste para paragrafo de piccoli vestiti Teste para paragrafo de piccoli vestiti</p>
+					</div> 
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+			  <button type="button" class="btn btn-primary">Saiba mais</button>
+			</div>
+		  </div>
+		</div>
+	</div>
 	
 	
 	<!-- SCIPTS -->
@@ -333,6 +365,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="common-js/jquery.fluidbox.min.js"></script>
 	
 	<script src="common-js/scripts.js"></script>
+
+	<script src="js/index.js"></script>
 	
 </body>
 </html>
